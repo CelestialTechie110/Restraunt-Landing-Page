@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Meridian - Fine Dining Chennai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Hero Section -->
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">Le Meridian</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Le Meridian</h1>
+            <p>Experience Fine Dining in the Heart of Chennai</p>
+            <a href="#contact" class="btn">Reserve a Table</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            Nestled in the heart of Chennai, Le Meridian offers an exquisite fine dining experience 
+            blending contemporary elegance with traditional flavors. Our chefs curate a menu that delights every palate.
+        </p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Signature Dishes</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Truffle Risotto</h3>
+                <p>Creamy arborio rice with fresh truffles and parmesan shavings.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Grilled Lobster Tail</h3>
+                <p>Succulent lobster served with garlic butter sauce and microgreens.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Chocolate Soufflé</h3>
+                <p>Decadent dark chocolate soufflé with a hint of espresso.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Address Section -->
+    <section id="contact" class="contact">
+        <h2>Contact & Location</h2>
+        <p><strong>Address:</strong> 18, Mahatma Gandhi Road, Nungambakkam, Chennai, Tamil Nadu, 600034</p>
+        <p><strong>Phone:</strong> +91 44 1234 5678</p>
+        <p><strong>Email:</strong> reservations@lemeridianchennai.com</p>
+        <a href="#" class="btn">Reserve Now</a>
+
+        <!-- Google Maps Embed -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.392960217656!2d80.24813677580784!3d13.067439190766936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526659e6b2c9e7%3A0x3bb7a5f1e9e63b2a!2sNungambakkam%2C%20Chennai%2C%20Tamil%20Nadu%20600034!5e0!3m2!1sen!2sin!4v1707038548429!5m2!1sen!2sin" 
+                width="100%" 
+                height="300" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Le Meridian, Chennai | Follow us on 
+            <a href="#">Instagram</a>, 
+            <a href="#">Facebook</a>, 
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
